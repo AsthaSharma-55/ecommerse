@@ -1,0 +1,72 @@
+{
+  "users": [
+    {
+      "name": "astha",
+      "email": "astha@1234",
+      "password": "astha123",
+      "id": 1
+    },
+    {
+      "name": "astha",
+      "email": "astha@gmail.com",
+      "password": "astha123",
+      "id": 2
+    },
+    {
+      "name": "a",
+      "email": "b",
+      "password": "z",
+      "id": 3
+    },
+    {
+      "name": "peter",
+      "email": "peter@123",
+      "password": "peter123",
+      "id": 4
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 5
+    },
+    {
+      "name": "aryan",
+      "email": "aryan@123",
+      "password": "aryan123",
+      "id": 6
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Electronics",
+      "description": "Best electronic item"
+    },
+    {
+      "id": 2,
+      "name": "Home decor",
+      "description": "Best Home decor"
+    },
+    {
+      "id": 3,
+      "name": "Cosmatics",
+      "description": "Best Cosmatics item"
+    },
+    {
+      "id": 4,
+      "name": "fashnoable Clothes",
+      "description": "Best fashnoable Clothes item"
+    },
+    {
+      "name": "Shoes",
+      "description": "Best quality Shoes",
+      "id": 8
+    },
+    {
+      "name": "Smart Phones",
+      "description": "Smart Phones",
+      "id": 9
+    }
+  ]
+}

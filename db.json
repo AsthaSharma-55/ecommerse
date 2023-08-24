@@ -2,7 +2,7 @@
   "users": [
     {
       "name": "astha",
-      "email": "astha@1234",
+      "email": "astha@123",
       "password": "astha123",
       "id": 1
     },
@@ -25,9 +25,9 @@
       "id": 4
     },
     {
-      "name": "",
-      "email": "",
-      "password": "",
+      "name": "aman",
+      "email": "aman@123",
+      "password": "aman",
       "id": 5
     },
     {
@@ -35,38 +35,128 @@
       "email": "aryan@123",
       "password": "aryan123",
       "id": 6
+    },
+    {
+      "name": "",
+      "email": "james@123",
+      "password": "james123",
+      "id": 7
+    },
+    {
+      "name": "Astha Sharma",
+      "email": "asthasharma@externlabs.com",
+      "password": "astha",
+      "id": 8
+    },
+    {
+      "name": "Astha Sharma",
+      "email": "astha@externlabs.com",
+      "password": "astha",
+      "id": 9
+    },
+    {
+      "name": "nim",
+      "email": "nim@132",
+      "password": "nim",
+      "id": 10
+    },
+    {
+      "name": "shrddha",
+      "email": "shrddha@1234",
+      "password": "shrddha",
+      "id": 11
+    },
+    {
+      "name": "naman",
+      "email": "naman@123",
+      "password": "namann",
+      "id": 12
+    },
+    {
+      "name": "riyaRIYA@123",
+      "email": "riya@123",
+      "password": "riya",
+      "id": 13
+    },
+    {
+      "name": "ss",
+      "email": "ss@123",
+      "password": "ss@123",
+      "id": 14
+    },
+    {
+      "name": "lily sha",
+      "email": "lily@123",
+      "password": "lily@123",
+      "id": 15
+    },
+    {
+      "name": "ahm",
+      "email": "ahm@123",
+      "password": "ahm@123",
+      "id": 16
     }
   ],
   "categories": [
     {
-      "id": 1,
-      "name": "Electronics",
-      "description": "Best electronic item"
+      "name": "electronics",
+      "description": "electronics Itemss",
+      "price": "1000",
+      "id": 1
     },
     {
-      "id": 2,
       "name": "Home decor",
-      "description": "Best Home decor"
+      "description": "Best Home decor",
+      "price": "200",
+      "id": 2
     },
     {
       "id": 3,
       "name": "Cosmatics",
-      "description": "Best Cosmatics item"
+      "description": "Best Cosmatics item",
+      "price": 1000
     },
     {
       "id": 4,
       "name": "fashnoable Clothes",
-      "description": "Best fashnoable Clothes item"
+      "description": "Best fashnoable Clothes item",
+      "price": 1004
     },
     {
       "name": "Shoes",
       "description": "Best quality Shoes",
+      "price": 1000,
       "id": 8
     },
     {
       "name": "Smart Phones",
       "description": "Smart Phones",
+      "price": 100,
       "id": 9
+    },
+    {
+      "name": "Accessories",
+      "description": "earings...many more",
+      "price": 500,
+      "id": 10
+    },
+    {
+      "name": "Makeup Brushes",
+      "description": "Best soft bristle brushes",
+      "price": "9100",
+      "id": 11
+    },
+    {
+      "name": "water bottels",
+      "description": "CELLO GOOD QUALITY",
+      "price": "1100",
+      "id": 12
+    },
+    {
+      "name": "AssS",
+      "description": "SADSAD",
+      "price": "sada",
+      "id": 13
     }
   ]
 }

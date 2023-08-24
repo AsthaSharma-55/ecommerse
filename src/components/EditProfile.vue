@@ -49,7 +49,6 @@ export default {
         let result = localStorage.getItem('user_info')
         this.users = JSON.parse(result)
         console.log('hgkjhkjh', this.users)
-
     }
 
 }

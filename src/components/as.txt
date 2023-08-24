@@ -1,0 +1,110 @@
+<template>
+<h1>Card payment</h1>
+<div>
+    <h2>Products</h2>
+    <div v-for="items in productData" :key="items">
+        <p>{{ items.name }}</p>
+        <p>{{ items.description }}</p>
+        <p>{{ items.price }}</p>
+        
+        <button @click="addToCart(product)">Add to Cart</button>
+    </div>
+    <hr>
+    <h2>Cart</h2>
+    <div v-for="(cartItem, index) in productData" :key="index">
+        <p>{{ cartItem.name }} - ${{ cartItem.price }} x {{ cartItem.quantity }}</p>
+    </div>
+    <hr>
+    <p>Total: ${{ cartTotal }}</p>
+</div>
+
+<Stripe-checkout ref="checkoutRef" mode="payment" :pk="publisablekey" :line-items="lineItems" :success-url="successUrl" :cancel-url="cancelUrl" @loading="v =>loading=v" />
+<button @click="submitPayment">pay now</button>
+<router-link :to="`/detail/${productData.id}`">Go back</router-link>
+</template>
+
+<script>
+import axios from 'axios'
+import {
+    StripeCheckout
+} from '@vue-stripe/vue-stripe'
+export default {
+    name: "Somthing",
+    components: {
+        StripeCheckout
+    },
+    data() {
+
+        this.publisablekey = "pk_test_51MqUDJSFgDnHJDFQ1YqBnESazTN2DwIiX0IdLmgmV9Us0baekxU0qbjVQ2IVEajtNlwrtfOWvIja6NXvOAYDBRqj00luvSDoqK" //key from your account
+        return {
+            productData:[],
+            cart: [],
+            loading: false,
+            lineItems: [{
+                    price: 'price_1MqUv9SFgDnHJDFQpulQ4zL4', // this key is also from your account
+                    quantity: 1
+                },
+
+            ],
+            successUrl: 'http://127.0.0.1:5173/success',
+            cancelUrl: 'http://127.0.0.1:5173/cancel',
+
+        }
+    },
+    methods: {
+        submitPayment() {
+            this.$refs.checkoutRef.redirectToCheckout()
+        },
+        addToCart(product) {
+            let cartItem = this.productData.find(item => item.product.id === product.id);
+            if (cartItem) {
+                cartItem.quantity++;
+            } else {
+                this.cart.push({
+                    product: product,
+                    quantity: 1
+                });
+            }
+        }
+    },
+    computed: {
+        cartTotal() {
+            return this.cart.reduce((total, cartItem) => total + cartItem.product.price * cartItem.quantity, 0);
+        }
+    },
+    async mounted(){
+        console.log('is it array',this.productData)
+        let result = await axios.get(`http://localhost:5000/categories/${this.$route.params.id}`)
+        console.log('gkjhgkjhg', result.data)
+        this.productData = [result.data]
+        console.log('productData',this.productData)
+    }
+
+}
+</script>
+
+<style>
+
+</style>
+
+
+ async signUp() {
+      try {
+        const response = await axios.post("http://localhost:5000/users", {
+          name: this.name,
+          email: this.email,
+          password: this.password,
+        });
+
+        if (response.status === 201) {
+          // Update Vuex state and navigate to Home
+          this.$store.commit("setUser", response.data);
+          this.$router.push({ name: "Home" });
+        }
+      } catch (error) {
+        console.error("Error during signup:", error);
+      }
+    },
+
+
+

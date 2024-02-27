@@ -11,99 +11,10 @@
       "email": "astha@gmail.com",
       "password": "astha123",
       "id": 2
-    },
-    {
-      "name": "a",
-      "email": "b",
-      "password": "z",
-      "id": 3
-    },
-    {
-      "name": "peter",
-      "email": "peter@123",
-      "password": "peter123",
-      "id": 4
-    },
-    {
-      "name": "aman",
-      "email": "aman@123",
-      "password": "aman",
-      "id": 5
-    },
-    {
-      "name": "aryan",
-      "email": "aryan@123",
-      "password": "aryan123",
-      "id": 6
-    },
-    {
-      "name": "",
-      "email": "james@123",
-      "password": "james123",
-      "id": 7
-    },
-    {
-      "name": "Astha Sharma",
-      "email": "asthasharma@externlabs.com",
-      "password": "astha",
-      "id": 8
-    },
-    {
-      "name": "Astha Sharma",
-      "email": "astha@externlabs.com",
-      "password": "astha",
-      "id": 9
-    },
-    {
-      "name": "nim",
-      "email": "nim@132",
-      "password": "nim",
-      "id": 10
-    },
-    {
-      "name": "shrddha",
-      "email": "shrddha@1234",
-      "password": "shrddha",
-      "id": 11
-    },
-    {
-      "name": "naman",
-      "email": "naman@123",
-      "password": "namann",
-      "id": 12
-    },
-    {
-      "name": "riyaRIYA@123",
-      "email": "riya@123",
-      "password": "riya",
-      "id": 13
-    },
-    {
-      "name": "ss",
-      "email": "ss@123",
-      "password": "ss@123",
-      "id": 14
-    },
-    {
-      "name": "lily sha",
-      "email": "lily@123",
-      "password": "lily@123",
-      "id": 15
-    },
-    {
-      "name": "ahm",
-      "email": "ahm@123",
-      "password": "ahm@123",
-      "id": 16
     }
+  
   ],
   "categories": [
-    {
-      "name": "electronics",
-      "description": "electronics Itemss",
-      "price": "1000",
-      "id": 1
-    },
     {
       "name": "Home decor",
       "description": "Best Home decor",
@@ -135,12 +46,6 @@
       "id": 9
     },
     {
-      "name": "Accessories",
-      "description": "earings...many more",
-      "price": 500,
-      "id": 10
-    },
-    {
       "name": "Makeup Brushes",
       "description": "Best soft bristle brushes",
       "price": "9100",
@@ -157,6 +62,12 @@
       "description": "SADSAD",
       "price": "sada",
       "id": 13
+    },
+    {
+      "name": "skincare",
+      "description": "face serum",
+      "price": "509",
+      "id": 14
     }
   ]
 }
